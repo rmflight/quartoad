@@ -113,19 +113,14 @@ Now we should be able to put them together.
 toad_moved = image_extent(toad_scale, "525x770")
 combined_hex = c(base_hex, toad_moved)
 flattened_purple = image_flatten(combined_hex)
-print(flattened_purple)
 ```
-
-    # A tibble: 1 × 7
-      format width height colorspace matte filesize density
-      <chr>  <int>  <int> <chr>      <lgl>    <int> <chr>  
-    1 PNG      518    600 sRGB       TRUE         0 118x118
-
-![](readme.markdown_github_files/figure-markdown_github/combine_toad_hex-1.png)
 
 ``` r
 image_write(flattened_purple, path = "stickers/quartoad_hex_purple.png")
+knitr::include_graphics("stickers/quartoad_hex_purple.png")
 ```
+
+![](stickers/quartoad_hex_purple.png)
 
 This doesn’t look too bad, and this is what I posted initially. But the
 purple text is kind of hard to read. Maybe we should try another color.
@@ -137,19 +132,14 @@ sticker("resources/trippy_background.png", package = "All Hail Quarto", p_size =
 base_black = image_read("figures/base_hex_black.png")
 combined_black = c(base_black, toad_moved)
 flattened_black = image_flatten(combined_black)
-print(flattened_black)
 ```
-
-    # A tibble: 1 × 7
-      format width height colorspace matte filesize density
-      <chr>  <int>  <int> <chr>      <lgl>    <int> <chr>  
-    1 PNG      518    600 sRGB       TRUE         0 118x118
-
-![](readme.markdown_github_files/figure-markdown_github/black_text-1.png)
 
 ``` r
 image_write(flattened_black, path = "stickers/quartoad_hex_black.png")
+knitr::include_graphics("stickers/quartoad_hex_black.png")
 ```
+
+![](stickers/quartoad_hex_black.png)
 
 This text is definitely much more legible. What about white??
 
@@ -160,16 +150,11 @@ sticker("resources/trippy_background.png", package = "All Hail Quarto", p_size =
 base_white = image_read("figures/base_hex_white.png")
 combined_white = c(base_white, toad_moved)
 flattened_white = image_flatten(combined_white)
-print(flattened_white)
 ```
-
-    # A tibble: 1 × 7
-      format width height colorspace matte filesize density
-      <chr>  <int>  <int> <chr>      <lgl>    <int> <chr>  
-    1 PNG      518    600 sRGB       TRUE         0 118x118
-
-![](readme.markdown_github_files/figure-markdown_github/white_text-1.png)
 
 ``` r
 image_write(flattened_white, path = "stickers/quartoad_hex_white.png")
+knitr::include_graphics("stickers/quartoad_hex_white.png")
 ```
+
+![](stickers/quartoad_hex_white.png)
