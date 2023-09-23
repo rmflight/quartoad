@@ -90,12 +90,12 @@ Now we should be able to put them together.
 toad_moved = image_extent(toad_scale, "525x770")
 combined_hex = c(base_hex, toad_moved)
 flattened_purple = image_flatten(combined_hex)
-print(flattened_purple)
 ```
 
 ```{r}
 #| label: save_purple
 image_write(flattened_purple, path = "stickers/quartoad_hex_purple.png")
+knitr::include_graphics("stickers/quartoad_hex_purple.png")
 ```
 
 This doesn't look too bad, and this is what I posted initially.
@@ -110,12 +110,12 @@ sticker("resources/trippy_background.png", package = "All Hail Quarto", p_size =
 base_black = image_read("figures/base_hex_black.png")
 combined_black = c(base_black, toad_moved)
 flattened_black = image_flatten(combined_black)
-print(flattened_black)
 ```
 
 ```{r}
 #| label: save_black
 image_write(flattened_black, path = "stickers/quartoad_hex_black.png")
+knitr::include_graphics("stickers/quartoad_hex_black.png")
 ```
 
 This text is definitely much more legible.
@@ -129,10 +129,17 @@ sticker("resources/trippy_background.png", package = "All Hail Quarto", p_size =
 base_white = image_read("figures/base_hex_white.png")
 combined_white = c(base_white, toad_moved)
 flattened_white = image_flatten(combined_white)
-print(flattened_white)
 ```
 
 ```{r}
 #| label: save_white
 image_write(flattened_white, path = "stickers/quartoad_hex_white.png")
+knitr::include_graphics("stickers/quartoad_hex_white.png")
 ```
+
+
+## License
+
+All images are licensed CC0.
+Download, remix, revamp, do whatever you want with them. 
+Use the code above to make different versions if you want to.

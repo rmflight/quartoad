@@ -158,3 +158,9 @@ knitr::include_graphics("stickers/quartoad_hex_white.png")
 ```
 
 ![](stickers/quartoad_hex_white.png)
+
+## License
+
+All images are licensed CC0. Download, remix, revamp, do whatever you
+want with them. Use the code above to make different versions if you
+want to.
